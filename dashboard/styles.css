@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gov-navy: #1e3a5f;
+  --color-gov-teal: #00a3a6;
+  --color-gov-tealDark: #008587;
+  --color-gov-amber: #f59e0b;
+  --color-gov-red: #dc2626;
+  --color-gov-green: #16a34a;
+  --color-gov-text: #0b0c0c;
+  --color-gov-secondary: #505a5f;
+  --color-gov-border: #b1b4b6;
+  --color-gov-light: #f3f2f1;
+  --font-family-sans: 'Inter', sans-serif;
+}
+
+body {
+  color: #0b0c0c;
+}
+
+*:focus-visible {
+  outline: 3px solid #fd0;
+  outline-offset: 0;
+  background-color: #0b0c0c;
+  color: #fff;
+  box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+}
+
+/* Custom scrollbar for log output */
+.scroller::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroller::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
