@@ -49,7 +49,7 @@ const Launchpad: React.FC = () => {
                         <Rocket size={16} /> Welcome to the AI Meetup Edition
                     </div>
                     <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-                        Build Your First <span className="text-gov-teal">AI Portfolio</span> in 15 Minutes.
+                        Build Your <span className="text-gov-teal">AI Portfolio</span> in 15 Minutes.
                     </h1>
                     <p className="text-xl text-blue-100 mb-8 leading-relaxed">
                         Stop experimenting in silos. Start managing your AI initiatives as a strategic capability using the <span className="font-bold border-b-2 border-gov-teal">Three-Layer Architecture</span>.
@@ -58,7 +58,7 @@ const Launchpad: React.FC = () => {
                         <button className="px-8 py-4 bg-gov-teal hover:bg-gov-tealDark text-white rounded-xl font-bold transition-all flex items-center gap-2 shadow-lg shadow-gov-teal/20">
                             Get Started Now <ArrowRight size={20} />
                         </button>
-                        <a href="https://github.com/maree217/strata" target="_blank" rel="noreferrer" className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-xl font-bold transition-all flex items-center gap-2 backdrop-blur-sm">
+                        <a href="https://github.com/maree217/strata-ai-builder" target="_blank" rel="noreferrer" className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-xl font-bold transition-all flex items-center gap-2 backdrop-blur-sm">
                             <Github size={20} /> Star on GitHub
                         </a>
                     </div>
@@ -67,11 +67,32 @@ const Launchpad: React.FC = () => {
 
             {/* THREE LAYERS SECTION */}
             <section>
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold text-gov-navy mb-4">The Philosophy: The Three Layers</h2>
-                    <p className="text-gov-secondary max-w-2xl mx-auto italic">
-                        "Most AI projects fail because they build the roof before the foundation."
-                    </p>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16 text-left">
+                    <div>
+                        <h2 className="text-3xl font-bold text-gov-navy mb-6">The Philosophy: The Three Layers</h2>
+                        <p className="text-gov-secondary text-lg mb-6 leading-relaxed">
+                            Successful AI initiatives aren't built on luck—they're built on a solid foundation.
+                            <strong> Strata</strong> enforces a structured approach that ensures every project is secure, smart, and user-ready.
+                        </p>
+                        <div className="space-y-4">
+                            <p className="flex items-start gap-3 text-gov-navy">
+                                <span className="font-bold text-gov-teal shrink-0">01. Infrastructure:</span> The foundation of secure cloud and data privacy.
+                            </p>
+                            <p className="flex items-start gap-3 text-gov-navy">
+                                <span className="font-bold text-gov-teal shrink-0">02. Intelligence:</span> The brain of prompt logic and model selection.
+                            </p>
+                            <p className="flex items-start gap-3 text-gov-navy">
+                                <span className="font-bold text-gov-teal shrink-0">03. Experience:</span> The delivery of premium, high-impact user interfaces.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-white p-4 rounded-3xl shadow-2xl border border-gray-100 group overflow-hidden">
+                        <img
+                            src="/assets/diagrams/strata-philosophy.png"
+                            alt="Three Layer Philosophy"
+                            className="w-full h-auto rounded-2xl transform group-hover:scale-105 transition-transform duration-700"
+                        />
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

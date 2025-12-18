@@ -158,7 +158,7 @@ Copy this to a shared doc:
 
 If you have 15 extra minutes:
 ```bash
-git clone https://github.com/maree217/strata
+git clone https://github.com/maree217/strata-ai-builder
 cd strata/dashboard
 npm install && npm run dev
 ```
@@ -239,4 +239,4 @@ After the workshop, ask:
 
 ---
 
-*Workshop from [Strata AI Portfolio Framework](https://github.com/maree217/strata)*
+*Workshop from [Strata AI Portfolio Framework](https://github.com/maree217/strata-ai-builder)*

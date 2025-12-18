@@ -321,4 +321,4 @@ Production is not your laptop. Build for production from day one.
 
 ---
 
-*From [Strata AI Portfolio Framework](https://github.com/maree217/strata)*
+*From [Strata AI Portfolio Framework](https://github.com/maree217/strata-ai-builder)*

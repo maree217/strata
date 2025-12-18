@@ -210,4 +210,4 @@ The organisations that succeed with AI are the ones that understand this from da
 
 ---
 
-*From [Strata AI Portfolio Framework](https://github.com/maree217/strata)*
+*From [Strata AI Portfolio Framework](https://github.com/maree217/strata-ai-builder)*

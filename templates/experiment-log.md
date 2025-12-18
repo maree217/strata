@@ -283,4 +283,4 @@ Learnings to preserve:
 
 ---
 
-*Template version 1.0 — From [Strata AI Portfolio Framework](https://github.com/maree217/strata)*
+*Template version 1.0 — From [Strata AI Portfolio Framework](https://github.com/maree217/strata-ai-builder)*

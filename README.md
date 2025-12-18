@@ -1,52 +1,50 @@
-# Strata
+# Strata: The AI Builder's OS
 
-### See Every Layer of Your AI Portfolio
+### Turn "Random AI Experiments" into a "Strategic AI Portfolio"
 
-[![Deploy to Firebase](https://img.shields.io/badge/Deploy%20to-Firebase-FFCA28?logo=firebase)](https://console.firebase.google.com/)
-[![Powered by Gemini](https://img.shields.io/badge/Powered%20by-Gemini%20AI-4285F4?logo=google)](https://ai.google.dev/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/maree217/strata?style=social)](https://github.com/maree217/strata/stargazers)
+![Strata Philosophy](./assets/diagrams/strata-philosophy.png)
 
----
-
-## The Problem
-
-**95% of AI projects fail.** Not because the technology doesn't work—but because organisations treat AI like traditional projects.
-
-Traditional projects end. AI doesn't.
-
-| Traditional Project | AI Initiative |
-|---------------------|---------------|
-| Define → Build → Deploy → **Done** | Deploy → Monitor → Learn → Iterate → **Never done** |
-| Success = delivery | Success = continuous improvement |
-| Fixed scope | Evolving capability |
-| One-time budget | Ongoing operations |
-
-Most organisations have no way to see, track, or manage their AI initiatives as the **living capabilities** they are.
-
-**Strata changes that.**
+[![GitHub stars](https://img.shields.io/github/stars/maree217/strata-ai-builder?style=social)](https://github.com/maree217/strata-ai-builder/stargazers)
 
 ---
 
-## What is Strata?
+## 🚀 The Business Reality
 
-Strata is the **Operating System for AI Builders**. It helps you move from "random experiments" to a "strategic portfolio" using a unique **Three-Layer Architecture**.
+**95% of AI projects fail.** 
 
-### The Three-Layer Philosophy
-1.  **Layer 1: Infrastructure** (API Keys, Cloud, Security) — The Foundation.
-2.  **Layer 2: Intelligence** (Prompts, Logic, Models) — The Brain.
-3.  **Layer 3: Experience** (Dashboards, Apps, UI) — The Delivery.
+They fail because business leaders treat AI like a "set and forget" IT project. But AI is a **living capability**. If you aren't managing it as a portfolio, you are losing money, risking data, and falling behind.
+
+**Strata is the first framework built to give you 100% visibility over your entire AI estate.**
+
+---
+
+## 🧠 The Three-Layer Philosophy
+
+Strata is based on the **Three-Layer Architecture**, a proven framework for building AI that actually works:
+
+1.  **Layer 1: Infrastructure** (The Foundation) — Secure cloud, robust API management, and data privacy.
+2.  **Layer 2: Intelligence** (The Brain) — Prompt engineering, model selection, and agentic logic.
+3.  **Layer 3: Experience** (The Delivery) — Sleek dashboards, intuitive apps, and user-centric design.
 
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                    STRATA LAUNCHPAD                      │
 ├─────────────────────────────────────────────────────────┤
-│  🚀 Launchpad        │  Build your first AI tool in 30s  │
-│  📊 Dashboard        │  See all initiatives at a glance │
-│  🔄 Pipeline         │  Track ideas → experiments → live│
-│  🤖 Gemini-Powered   │  AI-assisted project planning    │
+│  🚀 Launchpad        │  Build your first AI prototype in 30s│
+│  📊 Dashboard        │  Financial & Operational oversight  │
+│  🔄 Pipeline         │  Track Idea → Experiment → Live      │
+│  🤖 Gemini AI        │  Automated Strategy & Planning       │
 └─────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 💼 Why this matters for Leaders
+
+*   **Risk Management:** See which projects are high-risk (EU AI Act ready).
+*   **Cost Control:** Track API spend and ROI in one place (FinOps).
+*   **Speed to Market:** Move from an idea to a working prototype in minutes using the **Launchpad**.
+*   **Strategic Oversight:** Stop "Shadow AI" and align every initiative with business goals.
 
 ---
 
@@ -85,7 +83,7 @@ Strata is the **Operating System for AI Builders**. It helps you move from "rand
 
 ```bash
 # Clone the repo
-git clone https://github.com/maree217/strata
+git clone https://github.com/maree217/strata-ai-builder
 cd strata/dashboard
 
 # Install dependencies
@@ -111,7 +109,7 @@ firebase deploy
 ### Option B: Run Locally First
 
 ```bash
-git clone https://github.com/maree217/strata
+git clone https://github.com/maree217/strata-ai-builder
 cd strata/dashboard
 npm install
 npm run dev
@@ -389,12 +387,12 @@ MIT License — use freely, contribute back.
 4. Share with your team
 
 ```bash
-git clone https://github.com/maree217/strata
+git clone https://github.com/maree217/strata-ai-builder
 cd strata/dashboard
 npm install && npm run dev
 ```
 
-**Questions?** [Open an issue](https://github.com/maree217/strata/issues) or [LinkedIn](https://linkedin.com/in/rammaree).
+**Questions?** [Open an issue](https://github.com/maree217/strata-ai-builder/issues) or [LinkedIn](https://linkedin.com/in/rammaree).
 
 ---
 

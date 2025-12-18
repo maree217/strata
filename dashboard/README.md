@@ -1,39 +1,66 @@
-# Strata Dashboard
+# Strata Dashboard: The AI Builder's OS
 
-The visual interface for your AI portfolio.
+The visual interface for your strategic AI portfolio. Featuring the **Launchpad**—your starting point for rapid AI prototyping and portfolio mastery.
 
 ---
 
 ## Quick Start
 
 ```bash
+# Clone and enter the dashboard
+git clone https://github.com/maree217/strata-ai-builder
+cd strata-ai-builder/dashboard
+
 # Install dependencies
 npm install
 
-# Create environment file
-cp .env.example .env.local
-# Add your Gemini API key to .env.local
+# Add your Gemini API key (Required for Launchpad & Compliance)
+echo "VITE_GEMINI_API_KEY=your_key_here" > .env.local
 
 # Run locally
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+Open [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## Features
+## Experience the Layers
 
-| Page | Description |
-|------|-------------|
-| **Dashboard** | Overview metrics, charts, activity feed |
-| **Pipeline** | Kanban board: Discovery → Alpha → Beta → Live |
-| **Portfolio** | Searchable table of all AI systems |
-| **Compliance** | EU AI Act status + Gemini doc generator |
-| **FinOps** | Cost tracking and budget monitoring |
-| **Reports** | Document library and exports |
+| Feature | Layer | Description |
+|------|-------|-------------|
+| **Launchpad** | Layer 3 | Rapid prototyping and roadmap generation |
+| **Dashboard** | Layer 3 | Operational metrics and strategic oversight |
+| **Pipeline** | Layer 2 | High-level engineering orchestration (Idea → Live) |
+| **FinOps** | Layer 1 | Infrastructure cost tracking and ROI |
+| **Compliance** | Layer 1 | Risk management (EU AI Act ready) |
 
 ---
+
+## 🚀 The Launchpad
+
+The Launchpad is designed for non-technical users and busy builders. It allows you to:
+1.  Understand the **Three-Layer Architecture**.
+2.  Input a business prompt.
+3.  Receive an AI-generated implementation roadmap immediately.
+
+---
+
+## Deployment
+
+Deploy your professional AI management service to **Firebase Hosting** in under 5 minutes:
+
+```bash
+npm install -g firebase-tools
+firebase login
+firebase init hosting # Select: dist, Yes (SPA)
+npm run build
+firebase deploy
+```
+
+---
+
+*Part of the [Strata AI Builder OS](https://github.com/maree217/strata-ai-builder)*
 
 ## Tech Stack
 
@@ -195,4 +222,4 @@ dashboard/
 
 ---
 
-*Part of [Strata AI Portfolio Framework](https://github.com/maree217/strata)*
+*Part of [Strata AI Portfolio Framework](https://github.com/maree217/strata-ai-builder)*

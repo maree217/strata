@@ -65,7 +65,7 @@ At Level 2, the dashboard runs with **static data** (no database yet):
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/maree217/strata
+git clone https://github.com/maree217/strata-ai-builder
 cd strata/dashboard
 
 # 2. Install dependencies
@@ -118,7 +118,7 @@ firebase deploy
 If you're not ready to deploy:
 
 ```bash
-git clone https://github.com/maree217/strata
+git clone https://github.com/maree217/strata-ai-builder
 cd strata/dashboard
 npm install
 

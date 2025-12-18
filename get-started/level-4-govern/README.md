@@ -397,7 +397,7 @@ const analysis = await ai.generateContent({
 Level 4 implementations often benefit from professional support.
 
 **Need help?**
-- [Open an issue](https://github.com/maree217/strata/issues)
+- [Open an issue](https://github.com/maree217/strata-ai-builder/issues)
 - [Book a consultation](https://linkedin.com/in/rammaree)
 
 ---

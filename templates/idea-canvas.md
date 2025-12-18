@@ -250,4 +250,4 @@ _What's the ONE thing to do next?_
 
 ---
 
-*Template version 1.0 — From [Strata AI Portfolio Framework](https://github.com/maree217/strata)*
+*Template version 1.0 — From [Strata AI Portfolio Framework](https://github.com/maree217/strata-ai-builder)*

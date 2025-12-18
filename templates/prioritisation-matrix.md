@@ -181,4 +181,4 @@ Before finalising priorities:
 
 ---
 
-*Template from [Strata AI Portfolio Framework](https://github.com/maree217/strata)*
+*Template from [Strata AI Portfolio Framework](https://github.com/maree217/strata-ai-builder)*
