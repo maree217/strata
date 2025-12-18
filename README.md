@@ -30,19 +30,21 @@ Most organisations have no way to see, track, or manage their AI initiatives as 
 
 ## What is Strata?
 
-Strata is a framework and dashboard for managing AI initiatives—from a solo consultant tracking experiments to an enterprise managing 50+ AI systems.
+Strata is the **Operating System for AI Builders**. It helps you move from "random experiments" to a "strategic portfolio" using a unique **Three-Layer Architecture**.
 
-**Built on Google Cloud & Firebase** for simplicity, scale, and cost-effectiveness.
+### The Three-Layer Philosophy
+1.  **Layer 1: Infrastructure** (API Keys, Cloud, Security) — The Foundation.
+2.  **Layer 2: Intelligence** (Prompts, Logic, Models) — The Brain.
+3.  **Layer 3: Experience** (Dashboards, Apps, UI) — The Delivery.
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    YOUR AI PORTFOLIO                     │
+│                    STRATA LAUNCHPAD                      │
 ├─────────────────────────────────────────────────────────┤
+│  🚀 Launchpad        │  Build your first AI tool in 30s  │
 │  📊 Dashboard        │  See all initiatives at a glance │
 │  🔄 Pipeline         │  Track ideas → experiments → live│
-│  📈 Impact           │  Measure what's working          │
-│  🤖 Gemini-Powered   │  AI-assisted documentation       │
-│  ⚖️  Governance      │  Add compliance when you need it │
+│  🤖 Gemini-Powered   │  AI-assisted project planning    │
 └─────────────────────────────────────────────────────────┘
 ```
 

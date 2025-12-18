@@ -1,39 +1,45 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// Use Vite-style environment variables
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY || "";
+const genAI = new GoogleGenerativeAI(apiKey);
 
 export const generateDocumentation = async (
   systemName: string,
   sections: string[],
   onChunk: (text: string) => void
 ): Promise<string> => {
+  if (!apiKey) {
+    onChunk("Error: No API Key found. Please add VITE_GEMINI_API_KEY to your .env file.");
+    return "";
+  }
+
   try {
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    
     const prompt = `
-      You are a technical compliance officer for the UK Government. 
-      Generate a draft Annex IV technical documentation snippet for an AI system named "${systemName}".
+      You are an expert AI Architect. 
+      The user wants to document an AI system named "${systemName}".
       
       Please generate content for the following sections: ${sections.join(', ')}.
       
-      Tone: Professional, bureaucratic, precise, and technical.
+      Tone: Professional, precise, and visionary.
       Format: Markdown. 
       Do not include preamble. Start directly with the content.
     `;
 
-    const response = await ai.models.generateContentStream({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
-    });
+    const result = await model.generateContentStream(prompt);
 
     let fullText = '';
-    for await (const chunk of response) {
-      if (chunk.text) {
-        fullText += chunk.text;
-        onChunk(fullText);
-      }
+    for await (const chunk of result.stream) {
+      const chunkText = chunk.text();
+      fullText += chunkText;
+      onChunk(fullText);
     }
     return fullText;
   } catch (error) {
     console.error("Gemini API Error:", error);
+    onChunk("Error calling Gemini API. Check console for details.");
     throw error;
   }
 };
