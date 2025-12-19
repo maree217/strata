@@ -1,270 +1,90 @@
-# Strata
+# Strata Dashboard
 
-**A framework for building AI correctly and managing it continuously.**
+**AI Portfolio Management** — Track, measure, and manage your AI initiatives in one place.
 
 [![GitHub stars](https://img.shields.io/github/stars/maree217/strata?style=social)](https://github.com/maree217/strata/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/maree217/strata/tree/main/tools/dashboard)
 
----
+![Dashboard Preview](./assets/dashboard-preview.png)
 
-## Assess Your AI Maturity (60 Seconds)
+## What It Does
 
-| Question | Yes | No |
-|----------|:---:|:---:|
-| Can you list all your AI initiatives right now? | | |
-| Do you know the ROI of each? | | |
-| Do you review performance monthly? | | |
+- **Portfolio View** — See all AI initiatives at a glance
+- **Pipeline Tracking** — Move projects from Idea → Alpha → Beta → Live
+- **Cost Monitoring** — Track spend across your AI portfolio (FinOps)
+- **Compliance Docs** — Generate EU AI Act documentation with Gemini
 
-**3 Yes** — You're in the top 5%. Focus on optimization. [Framework](./framework/)
-**1-2 Yes** — You have gaps. Start with visibility. [Assessment](./framework/assessment.md)
-**0 Yes** — You're at risk. Start here. [Why 95% Fail](./philosophy/why-95-percent-fail.md)
-
----
-
-## The Problem
-
-**95% of AI projects fail.**
-
-Not because the technology is bad. Because organizations:
-- Start with shiny demos instead of solid foundations
-- Treat AI as projects that "end" instead of capabilities to operate
-- Have no visibility into what's working across their AI portfolio
-
----
-
-## The Solution
-
-Strata provides two things:
-
-### 1. Three-Layer Architecture
-*How to BUILD AI correctly*
-
-```
-Layer 1: Infrastructure  →  Build FIRST   →  30-50% cost savings
-Layer 2: Intelligence    →  Build SECOND  →  2-4x ROI
-Layer 3: Experience      →  Build LAST    →  5-10x ROI
-+ Governance throughout
-```
-
-Most projects fail because they start at Layer 3 (the demo). Strata enforces the right sequence.
-
-[Read the full philosophy →](./philosophy/three-layer-architecture.md)
-
-### 2. Portfolio Intelligence
-*How to MANAGE AI continuously*
-
-```
-Idea → Experiment → Deploy → Monitor → Iterate → Monitor → Iterate...
-                              (never ends)
-```
-
-AI isn't a project. It's operational infrastructure. Strata helps you track, measure, and improve continuously.
-
-[Read the full philosophy →](./philosophy/portfolio-intelligence.md)
-
----
-
-## Proven Approach
-
-### Industries Using This Framework
-Financial Services | Energy | Healthcare | Government | Manufacturing
-
-### Research Basis
-- Gartner AI Maturity Model
-- McKinsey Strategic AI Framework
-- MIT CISR Enterprise AI Research
-- IBM AI Operating Model
-
-### What Strata Adds
-- **Business language** instead of technical jargon
-- **Clear sequencing** with layer dependencies
-- **ROI focus** where each layer funds the next
-- **Practical tools** not just theory
-
----
-
-## What's Included
-
-| Section | Description |
-|---------|-------------|
-| [Philosophy](./philosophy/) | The "why" — understanding the approach |
-| [Framework](./framework/) | The "what" — methodology and guides |
-| [Tools](./tools/) | The "how" — dashboard and templates |
-| [Workshops](./workshops/) | Learning materials for teams |
-| [Governance](./GOVERNANCE.md) | Enterprise compliance guidance |
-
----
-
-## Quick Start
-
-### Option A: Learn First
-1. [Why 95% of AI Projects Fail](./philosophy/why-95-percent-fail.md)
-2. [Three-Layer Architecture](./philosophy/three-layer-architecture.md)
-3. [Portfolio Intelligence](./philosophy/portfolio-intelligence.md)
-
-### Option B: Use Templates (No Code)
-- [AI Idea Canvas](./tools/templates/idea-canvas.md) — Capture opportunities
-- [Experiment Log](./tools/templates/experiment-log.md) — Track experiments
-- [Prioritisation Matrix](./tools/templates/prioritisation-matrix.md) — Score by value/effort
-
-### Option C: Deploy the Dashboard
-
-**One-click deploy:**
+## Deploy Now
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/maree217/strata/tree/main/tools/dashboard)
 
-**Or run locally:**
+Or run locally:
 
 ```bash
 git clone https://github.com/maree217/strata
 cd strata/tools/dashboard
-npm install
-echo "VITE_GEMINI_API_KEY=your_key_here" > .env.local
-npm run dev
+npm install && npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173)
-
-Get your Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey).
-
-[Full deployment guide →](./tools/dashboard/README.md)
+Open [localhost:5173](http://localhost:5173)
 
 ---
 
-## The Framework
+## Toolkit & Resources
 
-### Self-Assessment
+Templates and guides to go with the dashboard:
 
-| Question | Your Answer |
+| Resource | Description |
 |----------|-------------|
-| How many AI initiatives do you have? | ___ |
-| How many are in production? | ___ |
-| What's the ROI of each? | ___ |
-| Who owns each initiative? | ___ |
-| How often do you review performance? | ___ |
+| [AI Idea Canvas](./tools/templates/idea-canvas.md) | Capture and evaluate AI opportunities |
+| [Experiment Log](./tools/templates/experiment-log.md) | Track experiments and learnings |
+| [Prioritisation Matrix](./tools/templates/prioritisation-matrix.md) | Score initiatives by value/effort |
+| [Self-Assessment](./docs/framework/assessment.md) | 54-point AI maturity scorecard |
 
-If you struggled to answer any of these, you need Strata.
+### Related Projects
 
-[Take the full assessment →](./framework/assessment.md)
-
-### Implementation Sequence
-
-```
-┌─────────────────────┐     ┌─────────────────────┐     ┌─────────────────────┐
-│ LAYER 1:            │     │ LAYER 2:            │     │ LAYER 3:            │
-│ Infrastructure      │ ──▶ │ Intelligence        │ ──▶ │ Experience          │
-│                     │     │                     │     │                     │
-│ • Cost optimization │     │ • Data pipelines    │     │ • User interfaces   │
-│ • Security          │     │ • ML operations     │     │ • Chatbots          │
-│ • Monitoring        │     │ • Learning loops    │     │ • Automations       │
-└─────────────────────┘     └─────────────────────┘     └─────────────────────┘
-         ↑                           ↑                           ↑
-    30-50% savings              2-4x ROI                    5-10x ROI
-```
-
-[Full framework guide →](./framework/README.md)
+- [UK Public Sector AI Solutions](https://github.com/maree217/uk-public-sector-ai-solutions) — Government-focused AI patterns
+- [AI Capability Builder](https://aicapabilitybuilder.com) — Enterprise AI consulting
 
 ---
 
-## The Dashboard
+## Why This Approach Works
 
-A visual interface for Portfolio Intelligence:
+Most AI projects fail because teams build demos before foundations.
 
-- **Overview** — Metrics across your AI portfolio
-- **Pipeline** — Track initiatives from Idea → Live
-- **Compliance** — EU AI Act readiness
-- **FinOps** — Cost tracking and ROI
+Strata follows a **three-layer architecture**:
+1. **Infrastructure** first (costs, security, monitoring)
+2. **Intelligence** second (data, ML ops, learning loops)
+3. **Experience** last (chatbots, dashboards, automations)
 
-### Features by Implementation Level
-
-| Feature | Static | With Firestore | Enterprise |
-|---------|:------:|:--------------:|:----------:|
-| Portfolio view | ✅ | ✅ | ✅ |
-| Pipeline tracking | ✅ | ✅ | ✅ |
-| Gemini doc generation | ✅ | ✅ | ✅ |
-| Data persistence | — | ✅ | ✅ |
-| Multi-user | — | ✅ | ✅ |
-| SSO | — | — | ✅ |
-| Audit trails | — | — | ✅ |
-
-[Dashboard documentation →](./tools/dashboard/README.md)
+Each layer funds the next. [Read the methodology →](./docs/philosophy/)
 
 ---
 
 ## Tech Stack
 
-Built on Google Cloud for simplicity and scale:
-
 | Component | Technology |
 |-----------|------------|
 | Frontend | React 19 + TypeScript + Vite |
 | Styling | Tailwind CSS |
-| Hosting | Firebase Hosting / Vercel |
+| Hosting | Vercel / Firebase |
 | Database | Firestore (optional) |
-| Auth | Firebase Auth (optional) |
 | AI | Google Gemini API |
-
----
-
-## Workshops
-
-Run these with your team:
-
-| Workshop | Duration | Outcome |
-|----------|----------|---------|
-| [Why AI Fails](./workshops/workshop-1-why-ai-fails.md) | 30 min | Understanding the problem |
-| [Self-Assessment](./workshops/workshop-2-assessment.md) | 45 min | Know your current state |
-| [Dashboard Setup](./workshops/workshop-3-dashboard.md) | 30 min | Working portfolio tracker |
-
----
-
-## Show Your Strata Level
-
-Add to your project README:
-
-```markdown
-[![Strata Level 1](https://img.shields.io/badge/Strata-Level%201-blue)](https://github.com/maree217/strata)
-```
-[![Strata Level 1](https://img.shields.io/badge/Strata-Level%201-blue)](https://github.com/maree217/strata)
-
-```markdown
-[![Strata Level 2](https://img.shields.io/badge/Strata-Level%202-green)](https://github.com/maree217/strata)
-```
-[![Strata Level 2](https://img.shields.io/badge/Strata-Level%202-green)](https://github.com/maree217/strata)
-
-```markdown
-[![Strata Level 3](https://img.shields.io/badge/Strata-Level%203-gold)](https://github.com/maree217/strata)
-```
-[![Strata Level 3](https://img.shields.io/badge/Strata-Level%203-gold)](https://github.com/maree217/strata)
 
 ---
 
 ## Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md).
-
-Ways to help:
-- **Star** this repo to follow the framework
-- **Fork** it to use the dashboard
-- Share improvements to documentation
-- Add templates or workshop materials
+- **Star** to bookmark for later
+- **Fork** to use the dashboard
+- PRs welcome for templates and docs
 
 ---
 
 ## License
 
-MIT License — use freely, contribute back.
+MIT — use freely.
 
 ---
 
-## About
-
-Created by [Ram Maree](https://linkedin.com/in/rammaree).
-
-Ram helps organisations operationalise AI using the Strata framework.
-[Contact for enterprise implementation](https://linkedin.com/in/rammaree).
-
----
-
-**Star this repo** to follow the framework. **Fork it** to use the dashboard.
+Created by [Ram Maree](https://linkedin.com/in/rammaree) — helping organisations operationalise AI.
